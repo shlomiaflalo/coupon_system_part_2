@@ -1,0 +1,2494 @@
+{
+	"info": {
+		"_postman_id": "7ba1d1e8-4754-415b-afbc-efaed7d4484f",
+		"name": "CouponSystemAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39414020"
+	},
+	"item": [
+		{
+			"name": "coupons",
+			"item": [
+				{
+					"name": "getCompanyCoupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCompanyCoupons/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCompanyCoupons",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCoupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCompanyCouponsByMaxPrice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/4/getCompanyCouponsByMaxPrice?maxPrice=700",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"4",
+								"getCompanyCouponsByMaxPrice"
+							],
+							"query": [
+								{
+									"key": "maxPrice",
+									"value": "700"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCouponsByMaxPriceAndCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/5/getCouponsByMaxPriceAndCustomerId?maxPrice=544",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"5",
+								"getCouponsByMaxPriceAndCustomerId"
+							],
+							"query": [
+								{
+									"key": "maxPrice",
+									"value": "544"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCouponsByCategoryIdAndCompanyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCouponsByCategoryIdAndCompanyId/22/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCouponsByCategoryIdAndCompanyId",
+								"22",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLastRecordCoupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getLastRecordCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getLastRecordCoupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFirstRecordCoupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getFirstRecordCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getFirstRecordCoupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomerCouponsByCategoryId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCustomerCouponsByCategoryId/1/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCustomerCouponsByCategoryId",
+								"1",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponAvailable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/isCouponAvailable/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"isCouponAvailable",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dueDateCouponCheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/dueDateCouponCheck/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"dueDateCouponCheck",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponTitleExistsByCompanyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/4/isCouponTitleExistsByCompanyId?title=Awesome Paper Clock on orders over $40",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"4",
+								"isCouponTitleExistsByCompanyId"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Awesome Paper Clock on orders over $40"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponExistsByCouponIdAndCompanyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/isCouponExistsByCouponIdAndCompanyId/1/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"isCouponExistsByCouponIdAndCompanyId",
+								"1",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "existsByCompanyIdAndTitleExclude",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 20,\n            \"name\": \"Movies\"\n        },\n        \"title\": \"Awesome Granite Watch on orders over $69\",\n        \"description\": \"Buster from Solomon Islands selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-09\",\n        \"amount\": 146,\n        \"price\": 272.0,\n        \"image\": \"Image 0\"\n    },\n    {\n        \"id\": 4,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 18,\n            \"name\": \"Shoes\"\n        },\n        \"title\": \"Heavy Duty Steel Table on orders over $60\",\n        \"description\": \"Lighthouse Chief selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-03\",\n        \"amount\": 367,\n        \"price\": 110.0,\n        \"image\": \"Image 3\"\n    },\n    {\n        \"id\": 6,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 13,\n            \"name\": \"Toys\"\n        },\n        \"title\": \"Practical Wool Keyboard on orders over $66\",\n        \"description\": \"Mr. Poopybutthole selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 319,\n        \"price\": 366.0,\n        \"image\": \"Image 5\"\n    },\n    {\n        \"id\": 14,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"sports\"\n        },\n        \"title\": \"Lightweight Bronze Table on orders over $70\",\n        \"description\": \"Sassy from Ethiopia selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 123,\n        \"price\": 284.0,\n        \"image\": \"Image 13\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/5/1/existsByCompanyIdAndTitleExclude?title=Durable Paper Table on orders over $74",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"5",
+								"1",
+								"existsByCompanyIdAndTitleExclude"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Durable Paper Table on orders over $74"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomerCoupons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 20,\n            \"name\": \"Movies\"\n        },\n        \"title\": \"Awesome Granite Watch on orders over $69\",\n        \"description\": \"Buster from Solomon Islands selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-09\",\n        \"amount\": 146,\n        \"price\": 272.0,\n        \"image\": \"Image 0\"\n    },\n    {\n        \"id\": 4,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 18,\n            \"name\": \"Shoes\"\n        },\n        \"title\": \"Heavy Duty Steel Table on orders over $60\",\n        \"description\": \"Lighthouse Chief selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-03\",\n        \"amount\": 367,\n        \"price\": 110.0,\n        \"image\": \"Image 3\"\n    },\n    {\n        \"id\": 6,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 13,\n            \"name\": \"Toys\"\n        },\n        \"title\": \"Practical Wool Keyboard on orders over $66\",\n        \"description\": \"Mr. Poopybutthole selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 319,\n        \"price\": 366.0,\n        \"image\": \"Image 5\"\n    },\n    {\n        \"id\": 14,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"sports\"\n        },\n        \"title\": \"Lightweight Bronze Table on orders over $70\",\n        \"description\": \"Sassy from Ethiopia selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 123,\n        \"price\": 284.0,\n        \"image\": \"Image 13\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCustomerCoupons/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCustomerCoupons",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponExistsByIdForController",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 20,\n            \"name\": \"Movies\"\n        },\n        \"title\": \"Awesome Granite Watch on orders over $69\",\n        \"description\": \"Buster from Solomon Islands selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-09\",\n        \"amount\": 146,\n        \"price\": 272.0,\n        \"image\": \"Image 0\"\n    },\n    {\n        \"id\": 4,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 18,\n            \"name\": \"Shoes\"\n        },\n        \"title\": \"Heavy Duty Steel Table on orders over $60\",\n        \"description\": \"Lighthouse Chief selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-03\",\n        \"amount\": 367,\n        \"price\": 110.0,\n        \"image\": \"Image 3\"\n    },\n    {\n        \"id\": 6,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 13,\n            \"name\": \"Toys\"\n        },\n        \"title\": \"Practical Wool Keyboard on orders over $66\",\n        \"description\": \"Mr. Poopybutthole selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 319,\n        \"price\": 366.0,\n        \"image\": \"Image 5\"\n    },\n    {\n        \"id\": 14,\n        \"company\": {\n            \"id\": 7,\n            \"name\": \"Yundt, Gulgowski and King\",\n            \"email\": \"YundtGulgowskiandKing@gmail.com\",\n            \"password\": \"tmokjsvqjz\"\n        },\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"sports\"\n        },\n        \"title\": \"Lightweight Bronze Table on orders over $70\",\n        \"description\": \"Sassy from Ethiopia selling it \",\n        \"startDate\": \"2025-01-29\",\n        \"endDate\": \"2025-02-11\",\n        \"amount\": 123,\n        \"price\": 284.0,\n        \"image\": \"Image 13\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/isCouponExistsByIdForController/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"isCouponExistsByIdForController",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponByCompany",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 0,\n\n  \"title\": \"Holiday Discount\",\n  \"description\": \"Save 20% on all electronics for a limited time.\",\n  \"startDate\": \"2025-01-01\",\n  \"endDate\": \"2025-01-15\",\n  \"amount\": 50,\n  \"price\": 19.99,\n  \"image\": \"https://example.com/images/coupon1.png\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/deleteCouponByCompany/9/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"deleteCouponByCompany",
+								"9",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCompanyCouponsByCategoryId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCompanyCouponsByCategoryId/4/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCompanyCouponsByCategoryId",
+								"4",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCouponByCompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Discount on dogs\",\n  \"description\": \"Get 20% off on selected dogs\",\n  \"startDate\": \"2024-02-01\",\n  \"endDate\": \"2024-02-28\",\n  \"amount\": 50,\n  \"price\": 299.99,\n  \"image\": \"https://example.com/dog.png\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/addCouponByCompany/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"addCouponByCompany",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCoupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Discount on ice cream\",\n  \"description\": \"Get 20% off on selected ice cream\",\n  \"startDate\": \"2024-02-01\",\n  \"endDate\": \"2024-02-28\",\n  \"amount\": 30,\n  \"price\": 5.99,\n  \"image\": \"https://example.com/icecream.png\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCouponByCompany",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\n    \"id\": 16,\n        \"title\": \"Discount on gray cats\",\n        \"description\": \"Get 20% off on gray cats\",\n        \"startDate\": \"2024-02-01\",\n        \"endDate\": \"2024-02-28\",\n        \"amount\": 50,\n        \"price\": 299.99,\n        \"image\": \"https://example.com/cats.png\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/updateCouponByCompany/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"updateCouponByCompany",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponByCompany",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/deleteCouponByCompany/5/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"deleteCouponByCompany",
+								"5",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCoupon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponExistsByIdForController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/isCouponExistsByIdForController/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"isCouponExistsByIdForController",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCompanyCouponsByCategoryId Copy 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/getCompanyCouponsByCategoryId/5/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"getCompanyCouponsByCategoryId",
+								"5",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allCoupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCoupon",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Discount on mac\",\n    \"description\": \"Get 20% off on selected m4\",\n    \"startDate\": \"2024-02-01\",\n    \"endDate\": \"2024-02-28\",\n    \"amount\": 30,\n    \"price\": 1000.99,\n    \"image\": \"https://example.com/mac.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/coupon/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"coupon",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "add_company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"TechCorp Inc.\",\n  \"email\": \"contact@techcorp.com\",\n  \"password\": \"securecompanypassword\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"TechCorp Inc.\",\n  \"email\": \"emailChangedForThis@techcorp.com\",\n  \"password\": \"securecompanypassword\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/company/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"company",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_company",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/company/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"company",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/customer/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"customer",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCustomers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getAllCustomers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getAllCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCompanies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getAllCompanies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getAllCompanies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneCustomer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getOneCustomer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getOneCustomer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneCompany",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getOneCompany/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getOneCompany",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"securepassword123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"firstName\": \"moshe\",\n  \"lastName\": \"cohen\",\n  \"email\": \"moshe.cohen@example.com\",\n  \"password\": \"securepassword123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/customer/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"customer",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleCompanyByEmail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getSingleCompanyByEmail?companyEmail=LednerInc@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getSingleCompanyByEmail"
+							],
+							"query": [
+								{
+									"key": "companyEmail",
+									"value": "LednerInc@yahoo.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleCustomerByEmail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getSingleCustomerByEmail?customerEmail=Britt.Moen@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getSingleCustomerByEmail"
+							],
+							"query": [
+								{
+									"key": "customerEmail",
+									"value": "Britt.Moen@hotmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLastCustomerRecord",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getLastCustomerRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getLastCustomerRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFirstCustomerRecord",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getFirstCustomerRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getFirstCustomerRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFirstCompanyRecord",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getFirstCompanyRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getFirstCompanyRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLastCompanyRecord",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/admin/getLastCompanyRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"admin",
+								"getLastCompanyRecord"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "getSingleByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/getSingleByEmail?email=Felicita.Walsh@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"getSingleByEmail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "Felicita.Walsh@hotmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/getSingle/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"getSingle",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFirstCustomerRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/getFirstCustomerRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"getFirstCustomerRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLastCustomerRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/getLastCustomerRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"getLastCustomerRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCustomersByCouponCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/getAllCustomersByCouponCategory/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"getAllCustomersByCouponCategory",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCustomerEmailExistsExclude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/1/isCustomerEmailExistsExclude?email=Darell.Lubowitz@yahoo.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"1",
+								"isCustomerEmailExistsExclude"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "Darell.Lubowitz@yahoo.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCustomerEmailExistsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/1/isCustomerEmailExistsById?email=Marcus.Bartell@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"1",
+								"isCustomerEmailExistsById"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "Marcus.Bartell@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCustomerEmailExists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/isCustomerEmailExists?email=Marshall.Lehner@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"isCustomerEmailExists"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "Marshall.Lehner@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "existsByEmailAndPassword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/existsByEmailAndPassword?email=Lance.Schaden@yahoo.com&password=x0ywvdxnf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"existsByEmailAndPassword"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "Lance.Schaden@yahoo.com"
+								},
+								{
+									"key": "password",
+									"value": "x0ywvdxnf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCustomerExistsByIdForController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/isCustomerExistsByIdForController/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"isCustomerExistsByIdForController",
+								"1"
+							],
+							"query": [
+								{
+									"key": "password",
+									"value": "x0ywvdxnf",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCustomer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Cohen\",\n  \"email\": \"john.Cohen@example.com\",\n  \"password\": \"secretpassword\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCustomer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCustomer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":3,\n  \"firstName\": \"ds\",\n  \"lastName\": \"inmnjnj\",\n  \"email\": \"s.kkmkmk@yahoo.com\",\n  \"password\": \"secretpassword\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/customer/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"customer",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "companies",
+			"item": [
+				{
+					"name": "addCompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"password\": \"securepassword\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCompany",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"name\": \"John Doe\",\n    \"email\": \"Moshe.doe@example.com\",\n    \"password\": \"securepassword\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/company/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRandomCompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/getRandomCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"getRandomCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/getSingleByEmail?email=BoscoLLC@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"getSingleByEmail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "BoscoLLC@hotmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFirstCompanyRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/getFirstCompanyRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"getFirstCompanyRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLastCompanyRecord",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/getLastCompanyRecord",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"getLastCompanyRecord"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyEmailExistsExclude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/1/isCompanyEmailExistsExclude?email=ToyandSons@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"1",
+								"isCompanyEmailExistsExclude"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "ToyandSons@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyExistsByEmailAndPassword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/isCompanyExistsByEmailAndPassword?email=ToyandSons@gmail.com&password=l7y0wpdxmu83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"isCompanyExistsByEmailAndPassword"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "ToyandSons@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "l7y0wpdxmu83"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyExistsByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/isCompanyExistsByName?name=Toy and Sons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"isCompanyExistsByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Toy and Sons"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyExistsByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/isCompanyExistsByEmail?email=ToyandSons@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"isCompanyExistsByEmail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "ToyandSons@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyExistsByNameAndId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/1/isCompanyExistsByNameAndId?name=Streich-Ernser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"1",
+								"isCompanyExistsByNameAndId"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Streich-Ernser"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCompanyExistsByIdForController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/isCompanyExistsByIdForController/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"isCompanyExistsByIdForController",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCompany",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allCompanies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/company/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"company",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "getRandomCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/getRandomCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"getRandomCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCategoryExistsByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/isCategoryExistsByName?name=sports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"isCategoryExistsByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "sports"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCategorty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"mouses\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCategoryExistsByIdForController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/isCategoryExistsByIdForController/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"isCategoryExistsByIdForController",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"mouses with laptops\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/category/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/category/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "purchases",
+			"item": [
+				{
+					"name": "purchaseCouponByCustomerIdAndCouponId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/3/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"3",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isCouponPurchasedByCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/isCouponPurchasedByCustomer/1/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"isCouponPurchasedByCustomer",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "purchasesByCustomerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/purchasesByCustomerId/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"purchasesByCustomerId",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponPurchaseByCustomerIdAndCouponId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/deleteCouponPurchase/6/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"deleteCouponPurchase",
+								"6",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponPurchaseById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponPurchasesByCouponId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/deleteCouponPurchasesByCouponId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"deleteCouponPurchasesByCouponId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponPurchaseByCompanyId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/deleteCouponPurchaseByCompanyId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"deleteCouponPurchaseByCompanyId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCouponsByCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/getCouponsByCustomer/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"getCouponsByCustomer",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isPurchaseExistsByIdForController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/isPurchaseExistsByIdForController/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"isPurchaseExistsByIdForController",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPurchase",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allPurchases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPurchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customer\": {\n    \"id\": 7\n  },\n  \"coupon\": {\n    \"id\": 1\n  },\n  \"review\": 3\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePurchase",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"customer\": {\n    \"id\": 2\n  },\n  \"coupon\": {\n    \"id\": 1\n  },\n  \"review\": 4\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCouponPurchaseByCustomerId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/api/purchase/deleteCouponPurchaseByCustomerId/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"api",
+								"purchase",
+								"deleteCouponPurchaseByCustomerId",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
